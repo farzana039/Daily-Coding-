@@ -1,0 +1,14 @@
+This function is designed to find the missing element in an array of size 𝑁 to N−1, where the integers in the array range from 1 to N, with exactly one number missing
+
+Steps
+1.Calculate the expected sum of integers from 1 to N by using the formula n*(n+1)/2
+2.Calculate the elements sums in array using sum function
+3.The missing element is simply the difference between the total sum and the sum of the elements in the array
+4.Return the missing element
+5.We have to take input of N and arr from the user 
+6.If arr is not equal to N-1,a warning is printed else missing element is returned
+
+Time Complexity: 
+O(n) — because the sum of the array elements is the most time-consuming step.
+Space Complexity: 
+O(n) — because the input array takes 
