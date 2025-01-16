@@ -1,0 +1,18 @@
+Given a String S,containing special characters and alphabets ,reverse the string without affecting the positions of the special characters
+
+Steps Followed:
+
+To reverse the string without affecting the positions of the special characters, we can approach the problem as follows:
+
+1.Extract all the alphabetic characters from the string.
+2.Reverse the extracted alphabetic characters.
+3.Rebuild the string by placing the reversed characters back into their respective positions, leaving the special characters untouched.
+
+Explanation:
+
+Step 1: We use list comprehension to collect only the alphanumeric characters (isalnum() checks for letters and numbers).
+Step 2: The list of alphabets is reversed using the reverse() method.
+Step 3: We loop through the original string and place each character back, replacing alphabetic ones with those from the reversed list and leaving the special characters in place.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
