@@ -1,0 +1,12 @@
+This code finds the union of two arrays using a set, which eliminates duplicates and ensures efficient operations. 
+
+A set in Python automatically removes duplicate values because it only stores unique elements.Adding elements to a set is efficient with an average time complexity of O(1).
+
+Step-by-step explanation of the code:
+
+1.The first for loop iterates through all elements in array1.At this point, all elements of array1 have been added to union_set
+2.The second for loop iterates through all elements in array2
+3.The final union_set contains all unique elements from array1 and array2
+4.Finally,returning out the union_set 
+
+Efficiency: Adding an element to a set has an average time complexity of O(1), making this approach faster than manually checking duplicates with a list.
