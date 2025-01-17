@@ -1,0 +1,10 @@
+Form a number divisible by 3 using array digits.Given an array of integers of length N,the task is to find whether it;s possible to construct an integer using all the digits of these numbers such that it would be divisible by 3.If it is possible then print 1 and if not print 0
+
+Explanation:
+1.Digit_sum is used to store the sum of all digits extracted from the numbers in the array.
+2.For each number, extract its digits and add them to the sum using modulo operator
+3.Check if the final sum is divisible by 3.
+4.if the final sum is divisible by 3 then return 1 else return 0
+
+Total complexity: O(n).
+Space Complexity:O(1).
