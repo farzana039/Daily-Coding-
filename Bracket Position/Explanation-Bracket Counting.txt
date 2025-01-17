@@ -1,0 +1,13 @@
+Given a string s ,the task is to find the bracket numbers
+
+To solve the problem of finding bracket numbers, we assign numbers to opening brackets ( in the order of their occurrence and match these numbers with corresponding closing brackets ).
+
+For example: Input: s = "(a+(b*c))+(d/e)" Output: [1, 2, 2, 1, 3, 3]
+
+Explanation
+1.Use a stack to track the numbers assigned to opening brackets.
+2.Increment the counter whenever an opening bracket is encountered and push the number to the stack.
+3.For a closing bracket, pop the top of the stack to get the corresponding number.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
