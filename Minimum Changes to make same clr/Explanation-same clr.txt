@@ -1,0 +1,10 @@
+Problem
+You are given a string s where each character represents a "color" (e.g., R for red and G for green). Some characters are in one color, and some are in another. Your task is to convert all the characters in the string to the same color (either all R or all G) using the minimum number of changes.
+
+Explanation
+1.The colors are represented as characters, like R (for red) and G (for green).
+2.Count how many of each color exists in the string using count function in the string
+3.Return the minimum of these two counts because converting the smaller group results in the fewest changes
+
+Time Complexity: O(n)
+Space Complexity: O(n)
