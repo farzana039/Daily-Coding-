@@ -1,0 +1,18 @@
+Maximum Sub Array of size k
+
+Explanation:
+1.The user enters the array as a space-separated string of numbers, which is converted into a list of integers using map and list.
+2.The user enters the value of k, which is converted into an integer.
+3.The program computes the maximum sum of a subarray of size k using the sliding window technique and prints the result.
+
+Steps:
+1.The function max_sum_subarray(arr, k) calculates the maximum sum of any subarray of size k
+2.Checks if the array is smaller than the required subarray size k. If true, it returns an error message.
+3.Sums the first k elements of the array to create the initial window.Sets max_sum to the value of this initial window
+4.For each new element arr[i] (starting at index k):
+I)Add the new element to the window_sum.
+II)Remove the element at the start of the previous window (arr[i - k]).
+III)Update max_sum if the new window_sum is greater
+5.The function returns the highest sum found
+
+Time Complexity=o(N)
