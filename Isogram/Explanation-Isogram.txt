@@ -1,0 +1,14 @@
+To check whether a given string is a Isogram
+
+Explanation:
+
+Step 1: Convert the input string to lowercase to ensure case insensitivity
+Step 2: Create an empty set to track characters we've already encountered
+Step 3: Iterate through each character in the string
+Step 4: Check if the character is an alphabet (ignore spaces, numbers, and symbols)
+Step 5: If the character is already in the set, it's a duplicate
+Step 6: Add the character to the set to track it as seen
+Step 7: If no duplicates are found, return True (it's an isogram)
+
+Time Complexity: O(n)
+Space Complexity: O(n)
