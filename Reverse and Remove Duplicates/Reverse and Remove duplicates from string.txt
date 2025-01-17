@@ -1,0 +1,11 @@
+Given a string s ,print it in the reverse manner by eliminating duplicates and spaces
+
+Explanation:
+
+1.Traverse the string from the end to the beginning.
+2.Use a set to keep track of characters that have already been added to the result (to eliminate duplicates).
+3.Skip spaces.
+4.Append characters to the result string only if they haven't been added yet.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
