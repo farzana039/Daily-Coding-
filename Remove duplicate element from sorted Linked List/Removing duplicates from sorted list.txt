@@ -1,0 +1,26 @@
+To remove duplicate elements from a sorted linked list, you can traverse the list while checking for duplicate nodes. Since the linked list is sorted, duplicates will appear consecutively, making it straightforward to identify and remove them
+
+Steps:
+
+1.Start at the Head:
+Begin traversing the linked list using a pointer (current_node), starting at the head.
+
+2.Identify and Remove Duplicates:
+For each node, check if the next node exists (current_node.next) and if the next node has the same value as the current node (current_node.next.val == current_node.val).
+If both conditions are true, skip the duplicate node by adjusting the next pointer
+
+3.Move Forward:
+After processing duplicates for the current node, move to the next node
+
+4.Return the Modified List:
+Once all nodes have been processed, return the head of the modified linked list.
+
+Time Complexity:
+
+Traversal: Each node is visited once.
+Overall: O(n), where n is the number of nodes in the linked list.
+
+Space Complexity:
+
+No extra space is used apart from a few pointers.
+Overall: O(1) (in-place operation).
