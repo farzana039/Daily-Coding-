@@ -1,0 +1,19 @@
+Given numbers of vehicles (both car and bike ) ,and wheels (both car and bike ) as input .we have to find that how many cars and how many bikes will be manufactured with this input
+
+Explanation
+
+1.Inputs Checking:
+Total wheels (W) must be even because every vehicle has at least 2 wheels.
+2𝑉≤𝑊≤4𝑉 ensures the input is valid (each vehicle is either a bike with 2 wheels or a car with 4 wheels).
+2.Calculation:(mathematical equation)
+Cars are calculated using 
+C= W−2V/2
+Bikes are calculated as 
+B=V−C.
+3.Output:
+The number of cars and bikes is printed.
+If the input is invalid, a descriptive error message is displayed.
+
+Time Complexity: O(1)
+
+Space Complexity: O(1)
