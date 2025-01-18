@@ -1,0 +1,12 @@
+You have a jumpy ball. You throw it up from the ground up to a height of H. The ball is jumpy, so when it comes back to the ground, it rebounds and goes up again to a distance of floor(H/2). This keeps on repeating until it can't rebound anymore. You need to find the total distance traveled by the ball.
+
+Explanation:
+1.Initialize the variable total_distance to track the cumulative distance traveled by the ball H: The height of the ball during the current bounce (initially the given height).
+2.The loop continues as long as the ball has a positive height.
+3.Upward Distance: Add H (the height the ball travels upward during this bounce) to total_distance.
+4.After reaching the top, the ball rebounds to a height of floor(H/2).
+6.Add the same height H to the total distance for the downward motion
+7.Once the loop ends (H=0), return the accumulated total_distance.
+
+Time Complexity:O(logH)
+Space C0mplexity:o(n)
