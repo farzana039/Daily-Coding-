@@ -1,0 +1,24 @@
+Reciprocal of the String 
+
+The reciprocal of a letter is the one positioned symmetrically on the opposite side of the alphabet.
+
+Examples:
+For uppercase: A ↔ Z, B ↔ Y, C ↔ X, ..., M ↔ N.
+For lowercase: a ↔ z, b ↔ y, c ↔ x, ..., m ↔ n.
+
+Explanation
+For each character in the string:
+1.Check if it is alphabetic (isalpha()).If it is not alpha simply ignore it
+2.Determine if it is uppercase (isupper()) or lowercase (islower()).
+3.Compute the reciprocal using ASCII arithmetic.This is done by using the ASCII values
+  The reciprocal relationship is based on the sum of ASCII values:
+For uppercase: ord('A') + ord('Z') = 155.
+For lowercase: ord('a') + ord('z') = 219.
+Reciprocal calculation:
+Uppercase: chr(155 - ord(char)).
+Lowercase: chr(219 - ord(char))
+
+4.After finding its reciprocal ,Append the result to the output string.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
