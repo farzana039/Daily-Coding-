@@ -1,0 +1,15 @@
+Given an array,if we have remove the maximum 2 numbers and return the rest of the array in sorted form 
+
+Explanation
+
+1.Sort the Array:
+Sorting will place all the numbers in ascending order.
+The two largest numbers will be at the last two positions of the array.
+2.Remove the Largest Numbers:
+Use slicing to remove the last two elements of the sorted array.
+3.Return the Remaining Numbers:
+The result will be the rest of the elements, already in sorted order
+
+Time Complexity:O(nlogn).
+
+Space Complexity: O(1)
