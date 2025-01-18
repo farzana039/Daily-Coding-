@@ -1,0 +1,30 @@
+The problem involves finding the maximum number of cake pieces that can be created with a given number of straight cuts
+
+The maximum number of pieces (P(n)) created with n cuts follows a mathematical pattern:
+
+Observation:
+
+With 0 cuts, there is only 1 piece (the whole cake).
+With 1 cut, the cake is divided into 2 pieces.
+With 2 cuts, if the second cut intersects the first, there are 4 pieces.
+With 3 cuts, if the third cut intersects all previous cuts, there are 7 pieces.
+
+Pattern: The number of pieces increases as follows:
+P(n)=P(n−1)+n
+
+This means the current number of pieces equals the previous number of pieces plus the number of additional pieces created by the new cut.
+
+Formula: The formula to calculate the maximum number of pieces for n cuts is:
+
+P(n)= n×(n+1)/2 +1
+This is derived from the sum of the first n natural numbers  ,plus the initial piece of the cake.
+
+Approach:
+1.Take the number of cuts (n) as input.
+2.Use the formula
+3.Return the result.
+
+Time Complexity
+O(1): The formula directly computes the result.
+Space Complexity
+O(1): No extra space is used.
