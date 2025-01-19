@@ -1,0 +1,31 @@
+You are given k tasks numbered from 1 to k. Three students have already completed some tasks, provided in the array arr[]. Now, two students, Tanya and Manya, need to complete the remaining tasks. Tanya will take the first remaining task, the third, and so on, while Manya will take the second, fourth, and so on. Given the array arr[] and the total number of tasks k, determine which tasks Tanya and Manya will complete.
+
+Examples:
+
+Input: arr[] = [2, 5, 6, 7, 9, 4] , k = 15
+Output: [[1, 8, 11, 13, 15],[3, 10, 12, 14]] 
+Explanation: The remaining tasks are :
+{1, 3, 8, 10, 11, 12, 13, 14, 15}.
+So Tanya should take these tasks :
+{1, 8, 11, 13, 15}.
+And Manya should take these tasks :
+{3, 10, 12, 14}.
+
+To solve this problem, we need to identify the tasks not included in the arr[] array (the remaining tasks) and assign them alternately to Tanya and Manya
+
+Steps:
+1.Find Remaining Tasks:
+Create a set of all tasks from 1 to k (using range(1, k+1)).In this all tasks are listed
+Subtract the set of already completed tasks (arr[]) from this set.
+Distribute Remaining Tasks:
+
+Sort the remaining tasks (to ensure they are in ascending order).
+Assign tasks to Tanya and Manya alternately:
+Tanya takes the first, third, fifth tasks, etc.
+Manya takes the second, fourth, sixth tasks, etc.
+Return the Results:
+
+Return two lists: one for Tanya and another for Manya.
+
+Time Complexity:O(n)
+Space C0mplexity:o(1)
