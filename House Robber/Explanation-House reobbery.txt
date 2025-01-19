@@ -1,0 +1,32 @@
+Given a street of N houses (a row of houses), each house having K amount of money kept inside; now there is a thief who is going to steal this money but he has a constraint/rule that he cannot steal/rob two adjacent houses. Find the maximum money he can rob.
+
+Example 1:
+
+Input:
+N = 5 , K = 10
+Output:
+30
+Explanation:
+The Robber can rob from the first, third
+and fifth houses which will result in 30.
+
+Input:
+N: Total number of houses.
+K: Maximum money in each house.
+
+Logic:
+
+If the number of houses N is even:
+Maximum money=𝑁/2 *K
+This is because the thief can rob exactly half of the houses without breaking the adjacency rule.
+If N is odd:
+Maximum money
+(N/2 +1)×K
+The thief can rob one additional house after robbing half.
+
+Output:
+The function returns the calculated maximum money.
+
+
+Time Complexity:O(n)
+Space C0mplexity:o(n)
