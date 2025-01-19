@@ -1,0 +1,37 @@
+You are given array arr of length of ropes. A cut operation is performed on ropes such that all of them are reduced by the length of the smallest rope. Return the number of ropes left after every cut operation until the length of each rope is zero.
+
+Examples:
+
+Input : arr[] = [5, 1, 1, 2, 3, 5] 
+Output : [4, 3, 2] 
+Explanation: In the first operation, the minimum ropes are 1 So, we reduce length 1 from all of them after reducing we left with 4 ropes and we do the same for rest. 
+
+Approach:
+Sort the Array:
+Sorting the array allows us to process ropes of the same length efficiently.
+Perform Cut Operations:
+Traverse the sorted array and reduce ropes by the smallest remaining length.
+Keep track of how many ropes are left after each operation.
+Output the Results:
+For each operation, store the count of ropes that are still non-zero.
+
+Steps in Detail:
+Input Array:
+Start with an array arr[].
+Sorting:
+Sort arr[] in ascending order. This ensures that the smallest value is at the beginning, and we can easily skip already processed ropes.
+Iterate Through Array:
+Traverse the array and only consider ropes that haven't been fully "cut" yet (i.e., their length is greater than the previous cut value).
+Keep Track of Cuts:
+For each unique length in the sorted array, calculate how many ropes remain after removing the previous lengths.
+
+Time Complexity:
+
+Sorting the array: O(nlogn).
+Iterating through the array:O(n).
+In total:O(nlogn).
+
+Space Complexity:
+Sorting uses O(n) space for the sorted array (in case of in-place sorting, space is O(1)).
+Result list uses O(k), where k is the number of unique lengths in the array.
+In total: O(n).
