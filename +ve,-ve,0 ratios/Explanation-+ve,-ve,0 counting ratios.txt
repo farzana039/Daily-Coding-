@@ -1,0 +1,14 @@
+Given an array which consists of positive num,negative num,zero digits. we have to count it and return its ratios of each count with the decimal of 6 places
+
+Approach:
+1.We need to count the number of positive, negative, and zero elements in the array. 
+2.Then, calculate their respective ratios by dividing each count by the total number of elements. 
+3.Finally, return the ratios formatted to 6 decimal places.
+
+Explanation:
+1.Use a list comprehension with sum to count the number of positive (x > 0), negative (x < 0), and zero (x == 0) numbers.
+2.Each count is divided by the total number of elements (n) to calculate its ratio.
+3.Ratios are formatted to 6 decimal places using Python's formatted string syntax (f"{value:.6f}").
+
+Time Complexity:O(n)
+Space C0mplexity:o(n)
