@@ -1,0 +1,11 @@
+1.Check if the lengths of both strings are the same
+2.If lengths are different, they can't be anagrams
+3.Initialize two empty dictionaries to count frequencies of characters
+4.Loop through each character in both strings
+5.Update frequency count for the character in string 's'
+ 6.Update frequency count for the character in string 't'
+ 7.Compare the frequency dictionaries of both strings
+ 8.If they are equal, the strings are anagrams
+
+Time Complexity: O(n)
+Space Complexity: O(1)
