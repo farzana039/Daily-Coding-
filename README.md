@@ -8,15 +8,6 @@ This repository is where I document my journey of improving coding skills by sol
 - Python 🐍
 (Additional languages may be added as I explore more technologies.)
 
-## Problem Sources
-
-The problems I solve come from a variety of platforms, including:
-
-- [LeetCode](https://leetcode.com/)
-- [HackerRank](https://www.hackerrank.com/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
-- [PrepInsta Prime](https://prepinstaprime.com/) (currently using this for exam preparation)
-
 ## Goals 🎯
 
 1. **Consistency:** Solve at least one coding problem daily.
