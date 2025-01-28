@@ -36,11 +36,11 @@ This repository is primarily for personal learning, but feel free to:
 - Share alternate approaches via pull requests.
 - Report any errors or issues you notice.
 
-## Contact 📬
+## Contact
 
 If you have any questions or would like to connect, feel free to reach out:
 
-- **Email:** [inyath1982@gmail.com]
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/farzana-e/)
+- **Email:** [My Email](inyath1982@gmail.com)
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/farzana-e/)
 
 Thank you for visiting! Happy coding! 
